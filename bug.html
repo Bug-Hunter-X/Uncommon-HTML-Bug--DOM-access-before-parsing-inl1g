@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv"></div>
+  <script>
+    // This line attempts to access the element before it's fully parsed
+    document.getElementById("myDiv").innerHTML = "This is dynamically added content.";
+  </script>
+</body>
+</html>
